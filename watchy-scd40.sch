@@ -1,0 +1,314 @@
+EESchema Schematic File Version 4
+LIBS:watchy-scd40-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L scd40:SCD40-D-R2 U1
+U 1 1 612090E9
+P 4100 4500
+F 0 "U1" H 4256 5186 59  0000 C CNN
+F 1 "SCD40-D-R2" H 4256 5081 59  0000 C CNN
+F 2 "scd40:SCD40-D-R2" H 4100 4500 50  0001 C CNN
+F 3 "" H 4100 4500 50  0001 C CNN
+	1    4100 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 612091D7
+P 4800 4650
+F 0 "#PWR03" H 4800 4400 50  0001 C CNN
+F 1 "GND" H 4805 4477 50  0000 C CNN
+F 2 "" H 4800 4650 50  0001 C CNN
+F 3 "" H 4800 4650 50  0001 C CNN
+	1    4800 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 4100 4600 4100
+Wire Wire Line
+	4800 4100 4800 4200
+Wire Wire Line
+	4800 4200 4600 4200
+Wire Wire Line
+	4600 4400 4800 4400
+Wire Wire Line
+	4800 4400 4800 4500
+Wire Wire Line
+	4600 4500 4800 4500
+Connection ~ 4800 4500
+Wire Wire Line
+	4800 4500 4800 4600
+Wire Wire Line
+	4600 4600 4800 4600
+Connection ~ 4800 4600
+Wire Wire Line
+	4800 4600 4800 4650
+Text GLabel 4950 4800 2    50   Input ~ 0
+SCL
+Text GLabel 4950 4900 2    50   Input ~ 0
+SDA
+Wire Wire Line
+	4600 4900 4950 4900
+Wire Wire Line
+	4600 4800 4950 4800
+$Comp
+L Regulator_Linear:AP131-33 U2
+U 1 1 6120960D
+P 4800 2900
+F 0 "U2" H 4800 3242 50  0000 C CNN
+F 1 "NJM2882F33" H 4800 3151 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 4800 3225 50  0001 C CNN
+F 3 "http://www.diodes.com/_files/datasheets/AP131.pdf" H 4800 2900 50  0001 C CNN
+	1    4800 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_3_Bridged12 JP1
+U 1 1 6120973C
+P 4800 3750
+F 0 "JP1" H 4800 3955 50  0000 C CNN
+F 1 "V SELECT" H 4800 3864 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged2Bar12_RoundedPad1.0x1.5mm" H 4800 3750 50  0001 C CNN
+F 3 "~" H 4800 3750 50  0001 C CNN
+	1    4800 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3900 4800 4100
+Connection ~ 4800 4100
+$Comp
+L power:GND #PWR02
+U 1 1 61209956
+P 4800 3250
+F 0 "#PWR02" H 4800 3000 50  0001 C CNN
+F 1 "GND" H 4805 3077 50  0000 C CNN
+F 2 "" H 4800 3250 50  0001 C CNN
+F 3 "" H 4800 3250 50  0001 C CNN
+	1    4800 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3200 4800 3250
+Wire Wire Line
+	4600 3750 4000 3750
+Wire Wire Line
+	4000 3750 4000 2800
+Text GLabel 3900 2800 0    50   Input ~ 0
+Vin
+Wire Wire Line
+	3900 2800 4000 2800
+Connection ~ 4000 2800
+$Comp
+L Device:C_Small C1
+U 1 1 61209E71
+P 4250 3050
+F 0 "C1" H 4342 3096 50  0000 L CNN
+F 1 ".1uF" H 4342 3005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4250 3050 50  0001 C CNN
+F 3 "~" H 4250 3050 50  0001 C CNN
+	1    4250 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 61209EA1
+P 5150 3050
+F 0 "C2" H 5242 3096 50  0000 L CNN
+F 1 ".01uF" H 5242 3005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5150 3050 50  0001 C CNN
+F 3 "~" H 5150 3050 50  0001 C CNN
+	1    5150 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 61209EE7
+P 5100 4200
+F 0 "C3" H 5192 4246 50  0000 L CNN
+F 1 "1uF" H 5192 4155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5100 4200 50  0001 C CNN
+F 3 "~" H 5100 4200 50  0001 C CNN
+	1    5100 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 61209F13
+P 5150 3250
+F 0 "#PWR04" H 5150 3000 50  0001 C CNN
+F 1 "GND" H 5155 3077 50  0000 C CNN
+F 2 "" H 5150 3250 50  0001 C CNN
+F 3 "" H 5150 3250 50  0001 C CNN
+	1    5150 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 61209F2A
+P 5100 4350
+F 0 "#PWR05" H 5100 4100 50  0001 C CNN
+F 1 "GND" H 5105 4177 50  0000 C CNN
+F 2 "" H 5100 4350 50  0001 C CNN
+F 3 "" H 5100 4350 50  0001 C CNN
+	1    5100 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 2900 5150 2900
+Wire Wire Line
+	5150 2900 5150 2950
+Wire Wire Line
+	5150 3150 5150 3250
+$Comp
+L power:GND #PWR01
+U 1 1 6120A8B3
+P 4250 3250
+F 0 "#PWR01" H 4250 3000 50  0001 C CNN
+F 1 "GND" H 4255 3077 50  0000 C CNN
+F 2 "" H 4250 3250 50  0001 C CNN
+F 3 "" H 4250 3250 50  0001 C CNN
+	1    4250 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2950 4250 2800
+Wire Wire Line
+	4250 3150 4250 3250
+Wire Wire Line
+	4800 4100 5100 4100
+Wire Wire Line
+	5100 4300 5100 4350
+Wire Wire Line
+	5100 2800 5500 2800
+Wire Wire Line
+	5500 2800 5500 3750
+Wire Wire Line
+	5500 3750 5000 3750
+Connection ~ 4250 2800
+Wire Wire Line
+	4250 2800 4500 2800
+Wire Wire Line
+	4000 2800 4250 2800
+$Comp
+L Jumper:SolderJumper_3_Bridged12 JP2
+U 1 1 6120FF72
+P 4400 2450
+F 0 "JP2" H 4400 2655 50  0000 C CNN
+F 1 "EN SEL" H 4400 2564 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged2Bar12_RoundedPad1.0x1.5mm" H 4400 2450 50  0001 C CNN
+F 3 "~" H 4400 2450 50  0001 C CNN
+	1    4400 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2600 4400 2900
+Wire Wire Line
+	4400 2900 4500 2900
+Wire Wire Line
+	4200 2450 4000 2450
+Wire Wire Line
+	4000 2450 4000 2800
+Text GLabel 4700 2450 2    50   Input ~ 0
+GPIO0
+Wire Wire Line
+	4600 2450 4700 2450
+$Comp
+L Connector:TestPoint TP1
+U 1 1 61210F50
+P 6800 2700
+F 0 "TP1" V 6754 2888 50  0000 L CNN
+F 1 "TestPoint" V 6845 2888 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 7000 2700 50  0001 C CNN
+F 3 "~" H 7000 2700 50  0001 C CNN
+	1    6800 2700
+	0    1    1    0   
+$EndComp
+Text GLabel 6700 2700 0    50   Input ~ 0
+Vin
+Wire Wire Line
+	6700 2700 6800 2700
+$Comp
+L Connector:TestPoint TP2
+U 1 1 61212A28
+P 6800 2900
+F 0 "TP2" V 6754 3088 50  0000 L CNN
+F 1 "TestPoint" V 6845 3088 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 7000 2900 50  0001 C CNN
+F 3 "~" H 7000 2900 50  0001 C CNN
+	1    6800 2900
+	0    1    1    0   
+$EndComp
+Text GLabel 6700 2900 0    50   Input ~ 0
+GPIO0
+Wire Wire Line
+	6700 2900 6800 2900
+$Comp
+L Connector:TestPoint TP3
+U 1 1 61212F57
+P 6800 3100
+F 0 "TP3" V 6754 3288 50  0000 L CNN
+F 1 "TestPoint" V 6845 3288 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 7000 3100 50  0001 C CNN
+F 3 "~" H 7000 3100 50  0001 C CNN
+	1    6800 3100
+	0    1    1    0   
+$EndComp
+Text GLabel 6700 3100 0    50   Input ~ 0
+SCL
+Wire Wire Line
+	6700 3100 6800 3100
+$Comp
+L Connector:TestPoint TP4
+U 1 1 612134BE
+P 6800 3300
+F 0 "TP4" V 6754 3488 50  0000 L CNN
+F 1 "TestPoint" V 6845 3488 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 7000 3300 50  0001 C CNN
+F 3 "~" H 7000 3300 50  0001 C CNN
+	1    6800 3300
+	0    1    1    0   
+$EndComp
+Text GLabel 6700 3300 0    50   Input ~ 0
+SDA
+Wire Wire Line
+	6700 3300 6800 3300
+$Comp
+L Connector:TestPoint TP5
+U 1 1 61213A6A
+P 6800 3500
+F 0 "TP5" V 6754 3688 50  0000 L CNN
+F 1 "TestPoint" V 6845 3688 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 7000 3500 50  0001 C CNN
+F 3 "~" H 7000 3500 50  0001 C CNN
+	1    6800 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6700 3500 6800 3500
+$Comp
+L power:GND #PWR06
+U 1 1 6121408D
+P 6700 3550
+F 0 "#PWR06" H 6700 3300 50  0001 C CNN
+F 1 "GND" H 6705 3377 50  0000 C CNN
+F 2 "" H 6700 3550 50  0001 C CNN
+F 3 "" H 6700 3550 50  0001 C CNN
+	1    6700 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3500 6700 3550
+$EndSCHEMATC

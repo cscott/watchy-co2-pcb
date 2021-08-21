@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name scd40)(type KiCad)(uri ${KIPRJMOD}/scd40.pretty)(options "")(descr ""))
+)

@@ -1,0 +1,11 @@
+(module CREATIVECOMMONS (layer F.Cu) (tedit 0)
+  (fp_text reference FRAME2 (at 0 0) (layer F.SilkS) hide
+    (effects (font (size 1.27 1.27) (thickness 0.15)))
+  )
+  (fp_text value FRAME (at 0 0) (layer F.SilkS) hide
+    (effects (font (size 1.27 1.27) (thickness 0.15)))
+  )
+  (fp_text user "This work is licensed under the Creative Commons Attribution 4.0 International License.\nTo view a copy of this license,visit:\nhttp://creativecommons.org/licenses/by-sa/4.0/" (at 0 0) (layer Dwgs.User)
+    (effects (font (size 1.2065 1.2065) (thickness 0.1016)) (justify left bottom))
+  )
+)
