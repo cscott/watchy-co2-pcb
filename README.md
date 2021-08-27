@@ -9,7 +9,8 @@ via GPIO to save some additional power.
 
 This board is built using kicad 5.
 
-![Schematic](./schematic.pdf)
+[![Schematic](./schematic.png)](./schematic.pdf)
 
-![PCB render](./watchy-scd40.wrl)
+![PCB render front](./board1.png)
+![PCB render back](./board2.png)
 
