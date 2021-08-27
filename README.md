@@ -8,6 +8,9 @@ and some extra capacitors to better decouple the
 power supply, and a solder jumper to allow disabling power to the SCD40
 via GPIO to save some additional power.
 
+Here's a [digikey link](https://www.digikey.com/short/t87dq9r9) for all
+components.
+
 This board is built using kicad 5.
 
 [![Schematic](./schematic.png)](./schematic.pdf)
