@@ -11,8 +11,13 @@ power supply.
 
 ![Board inputs](./pinout.png)
 
-The SCL/SDA/GND inputs should be wired to the appropriate test
-points on the Watchy, as shown below.
+This board is designed to be used with the
+[Watchy](https://watchy.sqfmi.com/) Open Source E-Paper Watch.
+A matching case can be found at
+[cscott/watchy-co2-case](https://github.com/cscott/watchy-co2-case#readme).
+
+When wiring to Watchy, the SCL/SDA/GND inputs should be wired to the
+appropriate test points on the Watchy PCB back, as shown below.
 
 ![Watchy test points](./watchy1.png)
 
@@ -37,14 +42,14 @@ above, and JP1 moved to its alternate REG position.  This powers the
 SCD40 by its own dedicated LDO regulator, ensuring the quietest
 possible power supply.  In this configuration you can swap JP2 as well
 to its GPIO0 position and wire up the GPIO0 input to control the power
-to the SCD40.  See below for the test point location which provides
-access to GPIO0.
+to the SCD40.  See the pink highlight below for the test point location
+which provides access to GPIO0.
 
 ![GPIO0 connection](./watchy3.png)
 
 The CP1 and CP3 capacitors will provide useful decoupling in all three
 configurations, although (depending on noise measurements) they may
-not be required.  The CP2 capacitor and U2 are only required in
+not be required.  All three capacitors and U2 are required in
 configuration three.
 
 Here's a [digikey link](https://www.digikey.com/short/t87dq9r9) for all
