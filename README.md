@@ -7,6 +7,8 @@ on.  It contains footprints to optionally add a
 and some extra capacitors to better decouple the
 power supply.
 
+![Assembled watch](./photos/aluminum.jpg)
+
 ![PCB mounted in Watchy](./photos/full-back.jpg)
 ![Populated PCB](./photos/pcb-front.jpg)
 
