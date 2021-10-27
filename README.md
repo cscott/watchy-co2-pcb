@@ -8,9 +8,10 @@ and some extra capacitors to better decouple the
 power supply.
 
 ![PCB mounted in Watchy](./photos/full-back.jpg)
+![Populated PCB](./photos/pcb-front.jpg)
+
 [![Schematic](./schematic.png)](./schematic.pdf)
 
-![Populated PCB](./photos/pcb-front.jpg)
 ![Board inputs](./pinout.png)
 
 This board is designed to be used with the
