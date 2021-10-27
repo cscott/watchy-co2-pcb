@@ -1,20 +1,24 @@
 watchy-co2-pcb
 ==============
 A small 10.3mm x 17mm PCB to mount the
-[Sensirion SCD40 CO<sub>2</sub> sensor](https://www.sensirion.com/en/environmental-sensors/carbon-dioxide-sensors/carbon-dioxide-sensor-scd4x/)
+[Sensirion SCD40 CO₂ sensor](https://www.sensirion.com/en/environmental-sensors/carbon-dioxide-sensors/carbon-dioxide-sensor-scd4x/)
 on.  It contains footprints to optionally add a
 [3.3v LDO regulator](https://www.njr.com/electronic_device/PDF/NJM2881_NJM2882_E.pdf)
 and some extra capacitors to better decouple the
 power supply.
 
+![PCB mounted in Watchy](./photos/full-back.jpg)
 [![Schematic](./schematic.png)](./schematic.pdf)
 
 ![Board inputs](./pinout.png)
+![Populated PCB](./photos/pcb-front.jpg)
 
 This board is designed to be used with the
 [Watchy](https://watchy.sqfmi.com/) Open Source E-Paper Watch.
 A matching case can be found at
-[cscott/watchy-co2-case](https://github.com/cscott/watchy-co2-case#readme).
+[cscott/watchy-co2-case](https://github.com/cscott/watchy-co2-case#readme),
+and a watchface using this board can be found at
+[cscott/watchy-c4](https://github.com/cscott/watchy-c4#readme),
 
 When wiring to Watchy, the SCL/SDA/GND inputs should be wired to the
 appropriate test points on the Watchy PCB back, as shown below.
